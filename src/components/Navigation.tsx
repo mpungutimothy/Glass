@@ -33,19 +33,19 @@ const Navigation: React.FC<NavigationProps> = ({ currentPage, setCurrentPage }) 
             className="flex items-center space-x-3 cursor-pointer"
             onClick={() => handlePageChange('home')}
           >
-            <div className="relative">
+            <div className="relative group">
               <img 
-                src="/logo.png" 
+                src="https://i.postimg.cc/Xqz9Lqzx/logo.png" 
                 alt="Rhino Glass Logo" 
-                className="w-12 h-12 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 logo-glow logo-float"
+                className="w-16 h-16 rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-110 logo-glow logo-float group-hover:rotate-3"
               />
-              <div className="absolute -top-1 -right-1 w-4 h-4 bg-red-600 rounded-full flex items-center justify-center">
-                <Building2 className="w-2.5 h-2.5 text-white" />
+              <div className="absolute -top-2 -right-2 w-6 h-6 bg-red-600 rounded-full flex items-center justify-center shadow-lg">
+                <Building2 className="w-3.5 h-3.5 text-white" />
               </div>
             </div>
             <div>
-              <h1 className="text-xl font-bold text-gray-900">Rhino Glass</h1>
-              <p className="text-xs text-red-600">Strength in Glass, Elegance in Aluminium</p>
+              <h1 className="text-2xl font-bold text-gray-900 group-hover:text-red-600 transition-colors">Rhino Glass</h1>
+              <p className="text-sm text-red-600 font-medium">Strength in Glass, Elegance in Aluminium</p>
             </div>
           </div>
 

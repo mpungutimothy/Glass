@@ -21,16 +21,20 @@ const HomePage: React.FC<HomePageProps> = ({ setCurrentPage }) => {
       {/* Intro Section */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="flex justify-center mb-8">
+          <div 
+            className="flex justify-center mb-8 cursor-pointer group"
+            onClick={() => handlePageChange('home')}
+          >
             <div className="relative">
               <img 
-                src="/logo.png" 
+                src="https://i.postimg.cc/Xqz9Lqzx/logo.png" 
                 alt="Rhino Glass Logo" 
-                className="w-24 h-24 rounded-2xl shadow-2xl logo-glow logo-float"
+                className="w-32 h-32 rounded-3xl shadow-3xl logo-glow logo-float hover:scale-110 transition-all duration-500 group-hover:rotate-6"
               />
-              <div className="absolute -top-2 -right-2 w-8 h-8 bg-red-600 rounded-full flex items-center justify-center">
-                <Shield className="w-4 h-4 text-white" />
+              <div className="absolute -top-3 -right-3 w-10 h-10 bg-red-600 rounded-full flex items-center justify-center shadow-xl">
+                <Shield className="w-5 h-5 text-white" />
               </div>
+              <div className="absolute inset-0 rounded-3xl bg-gradient-to-tr from-red-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
           </div>
           <h2 className="text-4xl font-bold text-gray-900 mb-8 slide-up">

@@ -37,20 +37,23 @@ const Footer: React.FC<FooterProps> = ({ currentPage, setCurrentPage }) => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-1">
-            <div className="flex items-center space-x-3 mb-6">
+            <div 
+              className="flex items-center space-x-3 mb-6 cursor-pointer group"
+              onClick={() => handlePageChange('home')}
+            >
               <div className="relative">
                 <img 
-                  src="/logo.png" 
+                  src="https://i.postimg.cc/Xqz9Lqzx/logo.png" 
                   alt="Rhino Glass Logo" 
-                  className="w-10 h-10 rounded-lg shadow-lg logo-glow"
+                  className="w-14 h-14 rounded-lg shadow-lg logo-glow hover:scale-105 transition-all duration-300"
                 />
-                <div className="absolute -top-1 -right-1 w-3 h-3 bg-red-600 rounded-full flex items-center justify-center">
-                  <Building2 className="w-2 h-2 text-white" />
+                <div className="absolute -top-1 -right-1 w-4 h-4 bg-red-600 rounded-full flex items-center justify-center">
+                  <Building2 className="w-2.5 h-2.5 text-white" />
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-bold">Rhino Glass</h3>
-                <p className="text-sm text-red-300">Strength in Glass, Elegance in Aluminium</p>
+                <h3 className="text-xl font-bold group-hover:text-red-300 transition-colors">Rhino Glass</h3>
+                <p className="text-sm text-red-300 font-medium">Strength in Glass, Elegance in Aluminium</p>
               </div>
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
