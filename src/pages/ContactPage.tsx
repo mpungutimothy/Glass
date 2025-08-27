@@ -287,7 +287,6 @@ This message was sent from the Rhino Glass website contact form.
                     </div>
                   </div>
                   
-                  <button className="w-full mt-6 px-6 py-3 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-colors">
                   <a 
                     href="mailto:info@rhinoglass.com?subject=Showroom Visit Request&body=Hello, I would like to schedule a visit to your showroom. Please let me know your availability." 
                     className="block w-full mt-6 px-6 py-3 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-colors text-center"
