@@ -38,8 +38,15 @@ const Footer: React.FC<FooterProps> = ({ currentPage, setCurrentPage }) => {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-3 mb-6">
-              <div className="p-2 rounded-lg bg-red-600">
-                <Building2 className="w-6 h-6 text-white" />
+              <div className="relative">
+                <img 
+                  src="/logo.png" 
+                  alt="Rhino Glass Logo" 
+                  className="w-10 h-10 rounded-lg shadow-lg logo-glow"
+                />
+                <div className="absolute -top-1 -right-1 w-3 h-3 bg-red-600 rounded-full flex items-center justify-center">
+                  <Building2 className="w-2 h-2 text-white" />
+                </div>
               </div>
               <div>
                 <h3 className="text-xl font-bold">Rhino Glass</h3>

@@ -21,6 +21,18 @@ const HomePage: React.FC<HomePageProps> = ({ setCurrentPage }) => {
       {/* Intro Section */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="flex justify-center mb-8">
+            <div className="relative">
+              <img 
+                src="/logo.png" 
+                alt="Rhino Glass Logo" 
+                className="w-24 h-24 rounded-2xl shadow-2xl logo-glow logo-float"
+              />
+              <div className="absolute -top-2 -right-2 w-8 h-8 bg-red-600 rounded-full flex items-center justify-center">
+                <Shield className="w-4 h-4 text-white" />
+              </div>
+            </div>
+          </div>
           <h2 className="text-4xl font-bold text-gray-900 mb-8 slide-up">
             Transform Your Space with Premium Glass & Aluminum
           </h2>

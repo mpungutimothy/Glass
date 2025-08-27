@@ -4,6 +4,30 @@
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
+/* Logo animations and effects */
+.logo-glow {
+  box-shadow: 0 0 20px rgba(239, 68, 68, 0.3);
+  transition: all 0.3s ease;
+}
+
+.logo-glow:hover {
+  box-shadow: 0 0 30px rgba(239, 68, 68, 0.5);
+  transform: scale(1.05);
+}
+
+.logo-float {
+  animation: logoFloat 3s ease-in-out infinite;
+}
+
+@keyframes logoFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
 .glassy {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
